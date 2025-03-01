@@ -1,11 +1,22 @@
 .App {
-    --header_height: 60px;
+    /* --header_height: 60px; */
+    display: block;
+    height: 100vh;
+    margin: 100px auto;
 }
 
 .hw {
-
+    display: block;
+    padding: 0 70px;
 }
 
 .hwTitle {
-
+    display: block;
+    padding: 0 70px 10px;
+    
+    border-bottom: 1px solid #d9d9d9;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #000;
 }
