@@ -1,0 +1,47 @@
+.button {
+    border-radius: 3px;
+    padding: 5px 24px;
+    height: 30px;
+    border: none;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    min-width: 132px;
+
+}
+
+.disabled {
+    background-color: #004d99;
+    color: #002e5c;
+    cursor: not-allowed
+}
+
+.secondary {
+    border: 1px solid #06c;
+    color: #06c;
+}
+
+.default {
+    background-color: #06c;
+}
+
+.red {
+    background-color: #cc1439;
+}
+
+.default:hover {background: #0080ff;}
+
+.red:hover {background: #ff1a47;}
+
+.secondary:hover {background: #e5f0fa;}
+
+
+.default:active {background: #0059b2;}
+
+.secondary:active {background: #c9e5ff;}
+
+.red:active {background: #b21232;}
+
+.button:disabled {opacity: 0.5}
