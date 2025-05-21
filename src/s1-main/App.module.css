@@ -1,8 +1,8 @@
 .App {
     /* --header_height: 60px; */
+    position: relative;
     display: block;
     height: 100vh;
-    margin: 70px auto;
 }
 
 .hw {

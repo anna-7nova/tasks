@@ -1,0 +1,81 @@
+.sidebar {
+    position: absolute;
+    height: 100vh;
+    width: 317px;
+    left: 0;
+    top: 0;
+
+    box-shadow: 0 1px 2px 0 rgba(29, 33, 38, 0.1), 0 10px 40px 0 rgba(29, 33, 38, 0.13);
+    background: #fff;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.background {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+    background-color: #000;
+    opacity: 0.3;
+}
+
+.nav {
+    width: 100%;
+    padding: 0 70px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    gap: 45px;
+}
+
+.nav a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #000;
+
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #58acff;
+}
+
+.nav a.active {
+    color: #0059b2;
+
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.nav a:active {
+    color: #3d6b99;
+}
+
+.close {
+    margin: 16px 24px 23px;
+
+    background-color: transparent;
+    border: none;
+}
+
+.close img {
+    height: 24px;
+    width: 24px;
+}
