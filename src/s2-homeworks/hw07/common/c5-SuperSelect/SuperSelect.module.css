@@ -1,0 +1,24 @@
+.select {
+  width: 165px;
+  height: 24px;
+
+  padding: 3px 10px;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize;
+
+  border: 1px solid #c2c2c2;
+  border-radius: 2px;
+}
+
+.select:after{
+    right: 10px; 
+}
+
+.select:focus {
+}
+
+.option:hover {
+}

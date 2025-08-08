@@ -1,0 +1,22 @@
+.radio {
+
+}
+
+.radio::before {
+}
+
+
+.radio:checked::before {
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
