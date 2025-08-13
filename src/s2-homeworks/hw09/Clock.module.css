@@ -1,0 +1,32 @@
+.buttonsContainer {
+    display: flex;
+    gap: 21px;
+    width: 100%;
+    max-width: 187px;
+}
+
+.clock {
+    display: block;
+    width: 187px;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.watch {
+    padding-top: 26px;
+
+    font-size: 20px;
+    color: #000;
+}
+
+.watch strong {
+    font-weight: 600;
+}
+
+.more {
+    padding: 8px 0 27px;
+
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+}
