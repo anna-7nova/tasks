@@ -1,0 +1,17 @@
+.loader {
+  /*свг и/или анимация*/
+  display: block;
+  background: url("./ui/Ellipse.svg") center/contain no-repeat;
+  width: 90px;
+  height: 90px;
+  animation: spin 1s linear infinite;
+
+  margin-top: 9px;
+  margin-bottom: 181px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

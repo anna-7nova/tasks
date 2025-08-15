@@ -7,15 +7,12 @@
 
 .clock {
     display: block;
-    width: 187px;
 
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
 }
 
 .watch {
-    padding-top: 26px;
-
     font-size: 20px;
     color: #000;
 }
