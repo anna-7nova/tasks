@@ -15,7 +15,8 @@
 }
 
 .input {
-  color: #000;
+  color: var(--color);
+  background-color: var(--background);
   height: 36px;
 
   margin: -26px 0 16px;

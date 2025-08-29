@@ -21,7 +21,7 @@
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     font-size: 14px;
-    color: #000;
+    color: var(--color);
 
     border-spacing: 0px;
 }
@@ -38,7 +38,7 @@
 }
 
 .thead {
-    background-color: #e5e5e5;
+    background-color: var(--borderColor);
     height: 36px;
 
     font-weight: 600;
@@ -46,7 +46,6 @@
 
 .nameCol {
     padding: 10px 0 10px 17px;
-
 }
 
 .ageCol {

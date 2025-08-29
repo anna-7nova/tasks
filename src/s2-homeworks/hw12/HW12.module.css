@@ -1,0 +1,36 @@
+[data-theme="1"] {
+  --color: #000000;
+  --background: #ffffff;
+  --borderColor: #d9d9d9;
+}
+
+[data-theme="2"] {
+  --color: #000000;
+  --background: #ddeeff;
+  --borderColor: #a4d1ff;
+}
+
+[data-theme="3"] {
+  --color: #ffffff;
+  --background: #212a34;
+  --borderColor: #384655;
+}
+
+html {
+  background-color: var(--background);
+  color: var(--color);
+}
+
+.select {
+  background-color: var(--background);
+  color: var(--color);
+}
+
+.text {
+  color: var(--color);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+
+  padding-bottom: 6px;
+}

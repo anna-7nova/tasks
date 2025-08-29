@@ -9,6 +9,7 @@
     font-size: 14px;
     color: #fff;
     min-width: 132px;
+    background-color: var(--background);
 
 }
 
@@ -35,12 +36,12 @@
 
 .red:hover {background: #ff1a47;}
 
-.secondary:hover {background: #e5f0fa;}
+.secondary:hover {background: var(--borderColor);}
 
 
 .default:active {background: #0059b2;}
 
-.secondary:active {background: #c9e5ff;}
+.secondary:active {background: var(--borderColor);}
 
 .red:active {background: #b21232;}
 

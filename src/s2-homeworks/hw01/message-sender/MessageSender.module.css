@@ -11,8 +11,9 @@
     padding-top: 11px;
 
     border-radius: 20px;
-    border-color: rgba(29, 33, 38, 0.1);
-    background-color: #f5f7fb;
+    border-color: rgb(29, 33, 38);
+    color: var(--color);
+    background-color: var(--borderColor);
 }
 
 .button {

@@ -1,76 +1,80 @@
 .greetingForm {
-    margin-bottom: 70px;
-    margin-top: 7px;
+  margin-bottom: 70px;
+  margin-top: 7px;
 }
 
 .inputAndButtonContainer {
-    display: flex;
-    align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
 }
 
 .error {
-    color: red
+  color: red;
 }
 
 .input {
-    border: 1px solid #D1D1D1;
-    border-radius: 5px;
-    display: inline-block;
-    height: 36px;
+  border: 1px solid #d1d1d1;
+  background-color: var(--background);
+  color: var(--color);
+  border-radius: 5px;
+  display: inline-block;
+  height: 36px;
 
-    padding: 8px 0 8px 12px;
+  padding: 8px 0 8px 12px;
 
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .input:focus {
-    outline: 1px solid #D1D1D1;
+  outline: 1px solid #d1d1d1;
 }
 
 .errorInput {
-    border: 1px solid red;
-    border-radius: 5px;
-    height: 36px;
+  border: 1px solid red;
+  background-color: var(--background);
+  border-radius: 5px;
+  height: 36px;
 }
 
 .button {
-    background-color: #0066CC;
-    opacity: 1;
-    border: 1px solid #0066CC;
-    border-radius: 5px;
-    padding: 8px 24px;
-    color: white;
+  background-color: #0066cc;
+  opacity: 1;
+  border: 1px solid #0066cc;
+  border-radius: 5px;
+  padding: 8px 24px;
+  color: white;
 
-    margin-left: 12px;
+  margin-left: 12px;
 }
 
 .button:focus {
-    background-color: #014f9c;
+  background-color: #014f9c;
 }
 
-.button:active {}
+.button:active {
+}
 
 .button:disabled {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .text {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color);
+  opacity: 0.5;
 
-    margin-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .greeting {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color);
 
-    margin-top: 10px;
+  margin-top: 10px;
 }
