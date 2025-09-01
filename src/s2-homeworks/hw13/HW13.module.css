@@ -1,0 +1,44 @@
+.buttonsContainer {
+  display: flex;
+  gap: 24px;
+}
+
+.responseContainer {
+  width: 100%;
+  min-height: 373px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  padding: 30px;
+}
+
+.imageContainer {
+    max-height: 315px;
+}
+
+.image {
+  max-width: 451px;
+  max-height: 315px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.code {
+  font-weight: 500;
+  font-size: 30px;
+  padding-bottom: 12px;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 16px;
+  max-width: 510px;
+}
+.info {
+  font-weight: 500;
+  font-size: 16px;
+}

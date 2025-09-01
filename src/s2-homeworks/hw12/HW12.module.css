@@ -24,6 +24,7 @@ html {
 .select {
   background-color: var(--background);
   color: var(--color);
+  margin-bottom: 212px;
 }
 
 .text {
