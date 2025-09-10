@@ -9,6 +9,9 @@
     display: block;
     padding: 24px 70px 32px;
     border-bottom: 1px solid var(--borderColor);
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .hwTitle {

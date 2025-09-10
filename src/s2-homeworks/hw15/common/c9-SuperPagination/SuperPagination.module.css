@@ -1,0 +1,38 @@
+.pagination {
+  display: flex;
+  align-items: center;
+
+  padding: 8px 0 36px;
+}
+
+.text1 {
+  text-transform: capitalize;
+  padding: 0 10px 0 24px;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color);
+}
+
+.text2 {
+  padding-left: 6px;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color);
+}
+
+.select {
+  max-width: 50px;
+  padding: 4px 3px 4px 6px;
+
+  text-align: start;
+  border: 1px solid var(--borderColor);
+
+  /* appearance: none;
+  background-image: url("../../accets/select_image.svg");
+  background-repeat: no-repeat;
+  background-position: right 6px center; */
+}

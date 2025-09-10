@@ -2,18 +2,21 @@
   --color: #000000;
   --background: #ffffff;
   --borderColor: #d9d9d9;
+  --loading-bg-rgb: 252, 250, 250;
 }
 
 [data-theme="2"] {
   --color: #000000;
   --background: #ddeeff;
   --borderColor: #a4d1ff;
+  --loading-bg-rgb: 221, 238, 255;
 }
 
 [data-theme="3"] {
   --color: #ffffff;
   --background: #212a34;
   --borderColor: #384655;
+  --loading-bg-rgb: 33, 42, 52;
 }
 
 html {
