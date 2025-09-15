@@ -52,32 +52,40 @@ const HW15 = () => {
     setLoading(true);
     getTechs(params)
       .then((res) => {
-        if (res?.data?.techs) {
+        if (res?.data) {
           setTechs(res.data.techs);
-          setTotalCount(res.data.totalCount)
-        } 
+          setTotalCount(res.data.totalCount);
+        }
       })
       .finally(() => setLoading(false));
   };
 
   const onChangePagination = (newPage: number, newCount: number) => {
     // делает студент
+    const params = {
+      ...Object.fromEntries(searchParams),
+      count: `${newCount}`,
+      page: `${newPage}`,
+    };
     setPage(newPage);
     setCount(newCount);
-    sendQuery({ page: newPage, count: newCount });
-    setSearchParams({
-      page: newPage.toString(),
-      count: newCount.toString(),
-    });
+    sendQuery(params);
+    setSearchParams(params);
   };
 
   const onChangeSort = (newSort: string) => {
     // делает студент
-    // setSort(
-    // setPage(1) // при сортировке сбрасывать на 1 страницу
-    // sendQuery(
-    // setSearchParams(
-    //
+    let params = new URLSearchParams(searchParams);
+    params.set("page", `1`); // при сортировке сбрасывать на 1 страницу
+    if (newSort === "") {
+      params.delete("sort");
+    } else {
+      params.set("sort", newSort);
+    }
+    setSort(newSort);
+    setPage(1); // при сортировке сбрасывать на 1 страницу
+    sendQuery(params);
+    setSearchParams(params);
   };
 
   useEffect(() => {
@@ -106,7 +114,7 @@ const HW15 = () => {
       <div className={s2.hw}>
         {idLoading && (
           <div id={"hw15-loading"} className={s.loading}>
-            <Loader/>
+            <Loader />
           </div>
         )}
 

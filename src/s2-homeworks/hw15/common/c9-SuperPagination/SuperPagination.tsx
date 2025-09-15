@@ -23,12 +23,14 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = ({
   const onChangeCallback = (event: any, page: number) => {
     // пишет студент
     onChange(page, itemsCountForPage);
-    debugger
   };
-debugger
+
   const onChangeSelect = (event: any) => {
     // пишет студент
-    onChange(page, Number(event.currentTarget.value));
+    const newItemCountPage = Number(event.currentTarget.value);
+    const newlastPage = Math.ceil(totalCount / newItemCountPage);
+    const currentPage = page <= newlastPage ? page : newlastPage;
+    onChange(currentPage, newItemCountPage); 
   };
   return (
     <div className={s.pagination}>
@@ -36,16 +38,14 @@ debugger
         id={id + "-pagination"}
         sx={{
           // стили для Pagination // пишет студент
-          "& .MuiPaginationItem-root": {
+          ".MuiPaginationItem-root": {
             borderRadius: "2px",
+            backgroundColor: "none",
             color: "var(--color)",
           },
-          "& .Mui-selected": {
-            backgroundColor: "rgba(0, 102, 204, 1)",
+          ".Mui-selected": {
+            backgroundColor: "#0066CC",
             color: "var(--background)",
-            "&:hover": {
-              backgroundColor: "#1565c0",
-            },
           },
         }}
         page={page}
